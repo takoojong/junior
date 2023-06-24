@@ -24,7 +24,7 @@ var [testimony ,setTestimony]=useState([{
 
 useEffect(()=>{
 
-  fetch("http://localhost:9000/users/get/testimonies",{method:"GET"})
+  fetch("https://ojongomema.cyclic.app/users/get/testimonies",{method:"GET"})
   .then(function(res){
     return res.json();
   }).then(function(data){

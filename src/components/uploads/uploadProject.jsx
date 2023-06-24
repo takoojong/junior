@@ -29,7 +29,7 @@ let [projectUpload, setProjectUpload]=React.useState(null)
  }
 console.log(projectUpload)
  function sumitData(event){
-fetch('http://localhost:9000/users/upload/project',{
+fetch('https://ojongomema.cyclic.app/users/upload/project',{
   method:"POST",
   body:JSON.stringify(projectUpload),
   headers: {'Content-Type': 'application/json'}

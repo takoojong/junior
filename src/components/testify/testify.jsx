@@ -20,16 +20,16 @@ function handleChange(event){
 }
 
 function handleSubmit(e){
-  // e.preventDefault();
+  e.preventDefault();
 
-  fetch('http://localhost:9000/users/upload/testimonies',{
+  fetch('https://ojongomema.cyclic.app/users/upload/testimonies',{
     method:"POST",
     body:JSON.stringify(upload),
     headers: {'Content-Type': 'application/json'}
   })
   .then(response =>response.json())
   .then(res=>{
-    
+    window.location.reload();
   })
   .catch(error => {
     console.error(error);

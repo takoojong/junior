@@ -1,6 +1,6 @@
 import React from 'react';
 import "./portfolio.css";
-import UploadProject from "../uploads/uploadProject";
+
 
 const Portfolio = () => {
 
@@ -14,7 +14,7 @@ const Portfolio = () => {
   
   React.useEffect(()=>{
   
-    fetch("http://localhost:9000/users/get/all/project",{method:"GET"})
+    fetch("https://ojongomema.cyclic.app/users/get/all/project",{method:"GET"})
     .then(function(res){
       return res.json();
     }).then(function(data){
@@ -61,7 +61,7 @@ return (
 })}
 
         </div>
-      <center>       <UploadProject/></center>
+      
       </section>
     );
 }
