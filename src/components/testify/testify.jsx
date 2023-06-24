@@ -29,7 +29,7 @@ function handleSubmit(e){
   })
   .then(response =>response.json())
   .then(res=>{
-    window.location.reload();
+    window.location.reload();              
   })
   .catch(error => {
     console.error(error);
